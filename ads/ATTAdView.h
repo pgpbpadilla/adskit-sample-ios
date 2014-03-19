@@ -25,6 +25,7 @@
 
 // Enumeration to specify Premium or Non-Premium or both to be accepted
 typedef enum {
+    PremiumNone = -1,           // Default value, -1 means no value is sent.
 	PremiumNonPremium = 0,     	// show only Non-Premium ads
 	PremiumPremium = 1,     	// show only Premium ads
 	PremiumBoth = 2,     		// show both Premium and Non-Premius ads

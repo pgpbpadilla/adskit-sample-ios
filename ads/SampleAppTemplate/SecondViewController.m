@@ -69,6 +69,9 @@
     [txtKeywords setTag:4];
     [txtLatitude setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
     [txtLongitude setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
+    
+    // set the default value for the Premium selector
+    [segCtrlPremium setSelectedSegmentIndex:appDelegate.premium];
 
 }
 
@@ -195,6 +198,8 @@
             [appDelegate setPremium:PremiumBoth];
             break;
         default:
+            // Default value is None, don't send the Premium parameter
+            [appDelegate setPremium:PremiumNone];
             break;
     }
 }

@@ -63,8 +63,8 @@
 		3DEAA7F21636681B00AEE0FF /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEAA7F01636681B00AEE0FF /* splash.png */; };
 		3DEAA7F31636681B00AEE0FF /* splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEAA7F11636681B00AEE0FF /* splash@2x.png */; };
 		3DF3FEB21622AB0A0001E60D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF3FEB11622AB0A0001E60D /* CoreLocation.framework */; };
-		5CF21FFA171583EF0088BBE5 /* libATTAdLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF21FF9171583EF0088BBE5 /* libATTAdLibrary.a */; };
 		5CF4972D1642991F0034A267 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF4972C1642991F0034A267 /* Default-568h@2x.png */; };
+		6E6E84F118D9261300ECAC75 /* libATTAdLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6E84F018D9261300ECAC75 /* libATTAdLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,10 +129,10 @@
 		3DEAA7F01636681B00AEE0FF /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		3DEAA7F11636681B00AEE0FF /* splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash@2x.png"; sourceTree = "<group>"; };
 		3DF3FEB11622AB0A0001E60D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		5C5B4EA21712F3B200B6C85A /* ATTAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTAdView.h; sourceTree = "<group>"; };
-		5C5B4EA31712F3B200B6C85A /* ATTAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTAdViewDelegate.h; sourceTree = "<group>"; };
-		5CF21FF9171583EF0088BBE5 /* libATTAdLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libATTAdLibrary.a; sourceTree = "<group>"; };
 		5CF4972C1642991F0034A267 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6E6E84F018D9261300ECAC75 /* libATTAdLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libATTAdLibrary.a; sourceTree = "<group>"; };
+		6E6E84F318D9266400ECAC75 /* ATTAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTAdView.h; sourceTree = "<group>"; };
+		6E6E84F418D9266400ECAC75 /* ATTAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTAdViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,12 +141,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DF3FEB21622AB0A0001E60D /* CoreLocation.framework in Frameworks */,
+				6E6E84F118D9261300ECAC75 /* libATTAdLibrary.a in Frameworks */,
 				2CDEEC6F161F18C900923EDC /* UIKit.framework in Frameworks */,
 				2CDEEC71161F18C900923EDC /* Foundation.framework in Frameworks */,
 				2CDEEC73161F18C900923EDC /* CoreGraphics.framework in Frameworks */,
 				332030A0161F1FB00021A1DB /* Security.framework in Frameworks */,
 				332030A1161F1FB00021A1DB /* SystemConfiguration.framework in Frameworks */,
-				5CF21FFA171583EF0088BBE5 /* libATTAdLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +156,7 @@
 		2CDEEC5F161F18C900923EDC = {
 			isa = PBXGroup;
 			children = (
+				6E6E84F218D9262D00ECAC75 /* ATTAdKit */,
 				5CF4972C1642991F0034A267 /* Default-568h@2x.png */,
 				3D8E2E7C165F866A00701DD3 /* Reachability */,
 				3D54F1351631929D00899BB1 /* Resources */,
@@ -176,7 +177,6 @@
 		2CDEEC6D161F18C900923EDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CF21FF9171583EF0088BBE5 /* libATTAdLibrary.a */,
 				3DF3FEB11622AB0A0001E60D /* CoreLocation.framework */,
 				3320309E161F1FB00021A1DB /* Security.framework */,
 				3320309F161F1FB00021A1DB /* SystemConfiguration.framework */,
@@ -192,7 +192,6 @@
 			children = (
 				3D0AA520164BB40600C6A894 /* ATTPopupWindow.m */,
 				3D0AA521164BB40600C6A894 /* ATTPopupWindow.h */,
-				3320309B161F1F680021A1DB /* LibraryHeaders */,
 				2CDEEC7D161F18CA00923EDC /* AppDelegate.h */,
 				2CDEEC7E161F18CA00923EDC /* AppDelegate.m */,
 				2CDEEC80161F18CA00923EDC /* FirstViewController.h */,
@@ -222,15 +221,6 @@
 				2CDEEC7C161F18CA00923EDC /* ATTAdKitSampleApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3320309B161F1F680021A1DB /* LibraryHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				5C5B4EA21712F3B200B6C85A /* ATTAdView.h */,
-				5C5B4EA31712F3B200B6C85A /* ATTAdViewDelegate.h */,
-			);
-			name = LibraryHeaders;
 			sourceTree = "<group>";
 		};
 		3D54F1351631929D00899BB1 /* Resources */ = {
@@ -269,6 +259,16 @@
 				3D8E2E84165F883B00701DD3 /* Reachability.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		6E6E84F218D9262D00ECAC75 /* ATTAdKit */ = {
+			isa = PBXGroup;
+			children = (
+				6E6E84F318D9266400ECAC75 /* ATTAdView.h */,
+				6E6E84F418D9266400ECAC75 /* ATTAdViewDelegate.h */,
+				6E6E84F018D9261300ECAC75 /* libATTAdLibrary.a */,
+			);
+			name = ATTAdKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,7 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -496,6 +496,7 @@
 				PROVISIONING_PROFILE = "C4764BBE-ADF3-46C7-9B98-2B1801A5D81C";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4764BBE-ADF3-46C7-9B98-2B1801A5D81C";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -511,7 +512,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -521,6 +522,7 @@
 				PROVISIONING_PROFILE = "C4764BBE-ADF3-46C7-9B98-2B1801A5D81C";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4764BBE-ADF3-46C7-9B98-2B1801A5D81C";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -594,7 +596,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -604,6 +606,7 @@
 				PROVISIONING_PROFILE = "C4764BBE-ADF3-46C7-9B98-2B1801A5D81C";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4764BBE-ADF3-46C7-9B98-2B1801A5D81C";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Distribution Enterprise";
