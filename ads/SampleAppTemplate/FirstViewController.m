@@ -34,15 +34,15 @@ NSInteger adMaxHeight = 50;
  * - (NSString *)unobfuscate:(NSString *)string withKey:(NSString *)key
  */
 
-#define APP_KEY @"76cb2aee7696627a6d27f959efa1a4d4"
-#define APP_SECRET @"7a0b131721d380fc"
+#define APP_KEY @APP_KEY
+#define APP_SECRET @APP_SECRET
 
 /**
  * UDID to be provided by the Developer
  * Must be 30 characters
  */
 
-#define UDID @"123456789012345678901234567890"
+#define UDID @UDID
 
 @interface FirstViewController ()
 
