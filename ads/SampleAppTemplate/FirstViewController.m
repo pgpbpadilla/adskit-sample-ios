@@ -91,8 +91,8 @@ NSInteger adMaxHeight = 50;
     // Create the categories array with from categoryListStr
     adCategories = [[NSArray alloc] initWithArray:[categoryListStr componentsSeparatedByString:@","]];
     
-    // Defaulting to NonPremium for the first use
-    appDelegate.premium = PremiumNonPremium;
+    // Defaulting to PremiumNone for the first use
+    appDelegate.premium = PremiumNone;
 
 }
 
