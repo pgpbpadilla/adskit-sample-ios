@@ -184,24 +184,7 @@
 
 - (IBAction)premiumSegment:(id)sender {
     
-    switch (segCtrlPremium.selectedSegmentIndex) {
-        case 0:
-            [arrayPreferences addObject:@"Non-Premium"];
-            [appDelegate setPremium:PremiumNonPremium];
-            break;
-        case 1:
-            [arrayPreferences addObject:@"Premium"];
-            [appDelegate setPremium:PremiumPremium];
-            break;
-        case 2:
-            [arrayPreferences addObject:@"Both"];
-            [appDelegate setPremium:PremiumBoth];
-            break;
-        default:
-            // Default value is None, don't send the Premium parameter
-            [appDelegate setPremium:PremiumNone];
-            break;
-    }
+    // TODO: Remove this method.
 }
 
 ///Segmented control to accept the age group for the user

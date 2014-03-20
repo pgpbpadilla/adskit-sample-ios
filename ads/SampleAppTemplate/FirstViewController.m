@@ -90,9 +90,6 @@ NSInteger adMaxHeight = 50;
     
     // Create the categories array with from categoryListStr
     adCategories = [[NSArray alloc] initWithArray:[categoryListStr componentsSeparatedByString:@","]];
-    
-    // Defaulting to PremiumNone for the first use
-    appDelegate.premium = PremiumNone;
 
 }
 
@@ -227,7 +224,6 @@ NSInteger adMaxHeight = 50;
     //Set Ads view properties.
     [attAdView setKeywords:appDelegate.keyWords];
     [attAdView setZipCode:appDelegate.zipCode];
-    [attAdView setPremium:appDelegate.premium ];
     [attAdView setMaxHeight:appDelegate.maxHeight];
     [attAdView setMaxWidth:appDelegate.maxWidth];
     [attAdView setAgeGroup:appDelegate.ageGroup] ;
