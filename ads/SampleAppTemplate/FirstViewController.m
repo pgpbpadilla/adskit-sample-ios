@@ -229,9 +229,14 @@ NSInteger adMaxHeight = 50;
     [attAdView setAgeGroup:appDelegate.ageGroup] ;
     [attAdView setLatitude:appDelegate.latitude] ;
     [attAdView setLongitude:appDelegate.longitude];
-    [attAdView setAdRefreshPeriod:30];  // in seconds
+    [attAdView setAdRefreshPeriod:2];  // in seconds
     [attAdView setAttAdViewDelegate:self];
     
+    // Get the user agent corresponding to a WebView for this app
+    UIWebView* viewToGetUserAgent= [[UIWebView alloc] initWithFrame:CGRectZero];
+    NSString* userAgent= [viewToGetUserAgent stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    // Don't forget to set the User Agent!! The AdView will fail to get Ads if it's not set.
+    [attAdView setUserAgent:userAgent];
     
     ///Accessing the preferences values like KeyWords,ZipCode,Premium categories, Ad Type, Age Group, Maximum Height and width, from the AppDelegate and passing to the API to set preferences for the Ad
         

@@ -106,6 +106,14 @@ typedef enum {
 
 @property (retain) NSString*            adServiceURL;
 
+/**
+ The User Agent to be simulated by the AdView. 
+ This is a mandatory parameter. If not set it will stop the 
+ AdView from requesting Ads.
+ Set this property to the appropriate value, e.g., see
+ http://stackoverflow.com/a/10207013/400544
+*/
+@property (copy) NSString* userAgent;
 
 /**
  
