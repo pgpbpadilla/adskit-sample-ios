@@ -22,15 +22,6 @@
 #define ATTAdVersionString	@"1.0.0"
 #define ATTAdBuildString	@"1F001"
 
-
-// Enumeration to specify Premium or Non-Premium or both to be accepted
-typedef enum {
-    PremiumNone = -1,           // Default value, -1 means no value is sent.
-	PremiumNonPremium = 0,     	// show only Non-Premium ads
-	PremiumPremium = 1,     	// show only Premium ads
-	PremiumBoth = 2,     		// show both Premium and Non-Premius ads
-} Premium;
-
 // Enumeration to specify Type of ads to be displayed, i.e. Text, Image, Both or No preference
 typedef enum {
 	TypeAll = -1,     			// No preference, show any type of ads
@@ -55,7 +46,7 @@ typedef enum {
  the advertisement content.  Ads generally have links that allow users to visit web sites.  To control all interactions implement the 
  ATTAdViewDelegate protocol.
  
- Advanced ad view customization is supported.  Ad content can be filtered using the premium property.  Use the properties minSize and maxSize
+ Advanced ad view customization is supported.  Use the properties minSize and maxSize
  to configure ad content size in server response.  Also you can set the search parameters using the keywords.
  
  
@@ -363,20 +354,6 @@ typedef enum {
  */
 
 @property BOOL                          isSizeRequired;
-
-
-/** 
- 
- Ad premium filter
- 
- Use this property to filter the content of ad by premium status.
- 
- The default value is PremiumNonPremium (0)
- 
- */
-
-@property Premium                       premium;
-
 
 
 /** 
