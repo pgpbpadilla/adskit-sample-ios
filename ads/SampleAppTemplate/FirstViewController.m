@@ -64,7 +64,14 @@ NSInteger adMaxHeight = 50;
      *************************************************************************************************/
     
     //Use this if the keys are not obfuscated.
-    attAdView = [attAdView initWithFrame:CGRectMake(0, 0,maxWidth,maxHeight)
+    CGRect adsFrame;
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
+        adsFrame = CGRectMake(0,10,maxWidth,maxHeight);
+    }
+    else {
+        adsFrame = CGRectMake(0,0,maxWidth,maxHeight);
+    }
+    attAdView = [attAdView initWithFrame:adsFrame
                                   appKey:APP_KEY
                                appsecret:APP_SECRET
                                 category:appDelegate.category udid:UDID];
@@ -90,6 +97,8 @@ NSInteger adMaxHeight = 50;
     
     // Create the categories array with from categoryListStr
     adCategories = [[NSArray alloc] initWithArray:[categoryListStr componentsSeparatedByString:@","]];
+
+    
 
 }
 
