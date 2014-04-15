@@ -238,7 +238,7 @@ NSInteger adMaxHeight = 50;
     [attAdView setAgeGroup:appDelegate.ageGroup] ;
     [attAdView setLatitude:appDelegate.latitude] ;
     [attAdView setLongitude:appDelegate.longitude];
-    [attAdView setAdRefreshPeriod:2];  // in seconds
+    [attAdView setAdRefreshPeriod:20];  // in seconds
     [attAdView setAttAdViewDelegate:self];
     
     // Get the user agent corresponding to a WebView for this app
