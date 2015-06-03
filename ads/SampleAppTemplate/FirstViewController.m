@@ -291,7 +291,7 @@ NSInteger adMaxHeight = 50;
     else {   
         NSInteger xCord =(NSInteger) (self.view.frame.size.width - appDelegate.maxWidth)/4;
         
-        NSLog(@"xCord = %d",xCord);
+        NSLog(@"xCord = %ld",(long)xCord);
 
         if (appDelegate.maxWidth == 0 && appDelegate.maxHeight == 0) {
             

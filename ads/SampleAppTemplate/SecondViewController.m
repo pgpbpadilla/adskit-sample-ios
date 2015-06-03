@@ -438,13 +438,13 @@
                     
                     appDelegate.maxWidth = width;
                     appDelegate.maxHeight = height;
-                    NSLog(@"MaxWidth= %d maxHeight=%d",appDelegate.maxWidth,appDelegate.maxHeight);
+                    NSLog(@"MaxWidth= %ld maxHeight=%ld",(long)appDelegate.maxWidth,(long)appDelegate.maxHeight);
                         
                     }
                     else {
                         appDelegate.maxWidth = 0;
                         appDelegate.maxHeight = 0;
-                        NSLog(@"MaxWidth= %d maxHeight=%d",appDelegate.maxWidth,appDelegate.maxHeight);
+                        NSLog(@"MaxWidth= %ld maxHeight=%ld",(long)appDelegate.maxWidth,(long)appDelegate.maxHeight);
 
                     }
                     
